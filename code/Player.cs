@@ -11,7 +11,7 @@ namespace ToiletRoyale
 			SetModel( "models/citizen/citizen.vmdl" );
 
 			Animator = new StandardPlayerAnimator();
-			Camera = new ThirdPersonCamera();
+			CameraMode = new ThirdPersonCamera();
 
 			EnableAllCollisions = true;
 			EnableDrawing = true;
@@ -25,7 +25,6 @@ namespace ToiletRoyale
 			LifeState = LifeState.Alive;
 			Health = 100;
 			Velocity = Vector3.Zero;
-			WaterLevel.Clear();
 
 			CreateHull();
 
@@ -57,7 +56,7 @@ namespace ToiletRoyale
 				TimeSinceFart = Rand.Float( 0.0f, 1.0f );
 			}
 
-			SetAnimBool( "b_sit", true );
+			SetAnimParameter( "b_sit", true );
 		}
 
 		public override void TakeDamage( DamageInfo info ) { }

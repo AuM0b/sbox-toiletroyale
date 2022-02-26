@@ -1,12 +1,12 @@
 {
-  "SharedAssets": "*.*",
   "Title": "Toilet Royale",
   "Type": "game",
   "Org": "safehouse",
-  "Ident": "sbox-toiletroyale",
+  "Ident": "toiletroyale",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
+  "ResourcePaths": null,
   "HasCode": true,
   "CodePath": "code",
   "RootNamespace": "Sandbox"
